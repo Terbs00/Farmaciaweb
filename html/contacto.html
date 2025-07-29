@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="../css/contacto.css" />
+
+
+</head>
+<header class="header">
+    <h1> Medicinas Belén</h1>
+    <p>Noticias y consejos sobre salud</p>
+  </header>
+
+<nav class="nav">
+    <a href="htmlfarm.html">Inicio</a>
+    <a href="blog.html">Blog</a>
+    <a href="PaginaD.html">Donaciones</a>
+     <a href="Servicios.html">Servicios</a>
+     <a href="preguntas.html">FQA</a>
+  </nav>
+
+<body>
+  <form id="formContacto" novalidate>
+    <h2>Contáctanos</h2>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" required />
+    <div id="errorNombre" class="error"></div>
+
+    <label for="email">Correo</label>
+    <input type="email" id="email" required />
+    <div id="errorEmail" class="error"></div>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" rows="4" required></textarea>
+    <div id="errorMensaje" class="error"></div>
+
+    <button type="submit">Enviar</button>
+    <button type="button" onclick="window.close()">Cerrar Ventana</button>
+  </form>
+<footer id="contacto">
+  <div class="footer-content">
+    <p>© 2025 SaludTotal - Todos los derechos reservados</p>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+      </a>
+      <a href="https://www.tiktok.com/" target="_blank">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+      </a>
+    </div>
+
+    <div class="footer-info">
+      <p><strong>Teléfono:</strong> +504 9999-8888</p>
+      <p><strong>Ubicación:</strong> Belén, Gualcho, una cuadra abajo de Inversiones Márquez</p>
+    </div>
+
+    <!-- Botón Acerca de Nosotros -->
+    <div class="footer-button">
+      <button onclick="window.open('AcercaN.html', '_blank')">Acerca de Nosotros</button>
+    </div>
+
+  </div>
+</footer>
+
+
+
+  <script src="../javascript/jscontacto.js"></script>
+</body>
+</html>

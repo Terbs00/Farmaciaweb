@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e1b876, #c76581, #d075be);
+}
+.nav {
+  background: #1a5a1f;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a5a1f;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navegacion a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.navegacion a:hover {
+  text-decoration: underline;
+}
+
+/* Título principal */
+.titulo-principal {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  color: #000000;
+  font-size: 2.2rem;
+}
+
+/* Productos */
+.descuentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.vitaminas {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.vitaminas:hover {
+  transform: scale(1.05);
+}
+
+.vitaminas img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.vitaminas h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.precio {
+  color: #01796f;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.antes {
+  color: #c62828;
+  font-size: 0.9rem;
+  text-decoration: line-through;
+}
+
+/* Pie de página */
+.pie-pagina {
+  background-color: #01796f;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .encabezado {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navegacion a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  .titulo-principal {
+    font-size: 1.6rem;
+  }
+
+  .precio, .antes {
+    font-size: 1rem;
+  }
+}
+footer#contacto {
+  background-color: #1a5a1f;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.social-icons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1); /* para que se vean blancos */
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-info p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.footer-button button {
+  background-color: #ffffff;
+  color: #1a5a1f;
+  border: 2px solid #1a5a1f;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer-button button:hover {
+  background-color: #1a5a1f;
+  color: white;
+}

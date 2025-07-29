@@ -1,0 +1,120 @@
+main {
+    flex: 1;
+    flex-grow: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+html, body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f8ff;
+  height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1a5a1f;
+  color: white;
+}
+
+.header p {
+  font-size: 1rem;
+}
+
+.nav {
+  background: #1a5a1f;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+
+section {
+  background-color: rgb(143, 168, 148);
+  padding: 2rem;
+  margin: 30px 0;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(1, 121, 111, 0.2);
+}
+
+button {
+  background-color: #4dcb58;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #025e52;
+}
+footer#contacto {
+  background-color: #1a5a1f;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.social-icons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1); /* para que se vean blancos */
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-info p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+.footer-button button {
+  background-color: #ffffff;
+  color: #1a5a1f;
+  border: 2px solid #1a5a1f;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer-button button:hover {
+  background-color: #1a5a1f;
+  color: white;
+}

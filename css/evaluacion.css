@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4fdfc;
+  color: #333;
+}
+
+.header-evaluacion {
+  background-color: #00695c;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.header-evaluacion h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.3rem;
+}
+
+.header-evaluacion p {
+  font-size: 1.2rem;
+  margin-top: 0;
+}
+
+.equipo-contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.tarjeta {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 105, 92, 0.2);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 105, 92, 0.3);
+}
+
+.foto {
+  width: 100px;
+  height: 100px;
+  background-color: #cfd8dc;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 3px solid #00796b;
+  background-image: url('');
+  background-size: cover;
+  background-position: center;
+}
+
+.tarjeta h3 {
+  margin: 0.5rem 0 0.2rem;
+  font-size: 1.2rem;
+  color: #004d40;
+}
+
+.tarjeta p {
+  font-size: 0.95rem;
+  color: #555;
+}
+footer#contacto {
+  background-color: #1a5a1f;
+  color: white;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.social-icons {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  filter: invert(1); /* para que se vean blancos */
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+.footer-info p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+.footer-button button {
+  background-color: #ffffff;
+  color: #1a5a1f;
+  border: 2px solid #1a5a1f;
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.footer-button button:hover {
+  background-color: #1a5a1f;
+  color: white;
+}
